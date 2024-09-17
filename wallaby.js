@@ -1,11 +1,12 @@
-module.exports = function (w) {
-	return {
-		files: ["src/**/*.ts"],
+module.exports = (w) => {
+  return {
+    trace: true,
+    files: ["src/**/*.ts"],
 
-		tests: ["**/*spec.ts", "**/*test.ts"],
+    tests: ["**/*spec.ts", "**/*test.ts"],
 
-		compilers: {
-			"**/*.ts?(x)": w.compilers.typeScript({ isolatedModules: true }),
-		},
-	};
+    compilers: {
+      "**/*.ts?(x)": w.compilers.typeScript({ isolatedModules: true }),
+    },
+  };
 };
