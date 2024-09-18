@@ -1,12 +1,15 @@
 module.exports = (w) => {
   return {
     trace: true,
-    files: ["src/**/*.ts"],
-
-    tests: ["**/*spec.ts", "**/*test.ts"],
-
-    compilers: {
-      "**/*.ts?(x)": w.compilers.typeScript({ isolatedModules: true }),
+    files: ["src/code/**/*.ts"],
+    env: {
+      type: "node",
+      runner: "node",
     },
+    autoDetect: true,
+
+    testFramework: "jest",
+
+    tests: ["src/tests/*spec.ts", "src/tests/*test.ts"],
   };
 };

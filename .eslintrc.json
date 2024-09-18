@@ -1,4 +1,7 @@
 {
     "root": true,
-    "extends": ["@optibus/eslint-config-ts"]
+    "extends": ["@optibus/eslint-config-ts"],
+    "rules": {
+        "import/prefer-default-export": "off"
+    }
 }
