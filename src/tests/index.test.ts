@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { expect, describe, it } from "@jest/globals";
+import { describe, it, expect } from "vitest";
 import { add } from "../code/index";
 
 describe("Hey", () => {
@@ -7,6 +7,6 @@ describe("Hey", () => {
     expect(add(1, 2)).toBe(3);
   });
   it("should calculate a + b", () => {
-    expect(add(3, 4)).toBe(7);
+    expect(add(3, 2)).toBe(5);
   });
 });
