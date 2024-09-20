@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 
 interface ButtonProps {
   label: string;
@@ -6,11 +6,7 @@ interface ButtonProps {
   color?: "primary" | "secondary";
 }
 
-const Button: React.FC<ButtonProps> = ({
-  label,
-  onClick,
-  color = "primary",
-}) => {
+const Button: FC<ButtonProps> = ({ label, onClick, color = "primary" }) => {
   let backgroundColor = "blue";
   if (color === "primary") {
     backgroundColor = "green";
