@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { describe, it, expect } from "vitest";
-import { add } from "../code/index";
+import { add } from "./index";
 
 describe("Hey", () => {
   it("should calculate a + b", () => {

@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button: FC<ButtonProps> = ({ label, onClick, color = "primary" }) => {
   let backgroundColor = "blue";
-  if (color === "primary") {
+  if (color !== "primary") {
     backgroundColor = "green";
   }
 

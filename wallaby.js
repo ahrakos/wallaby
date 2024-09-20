@@ -15,6 +15,6 @@ module.exports = (w) => {
       configFile: "vitest.config.ts",
     },
     debug: true,
-    tests: ["src/tests/*spec.ts", "src/tests/*test.ts", "src/tests/*test.tsx"],
+    tests: ["src/**/*.test.[jt]s?(x)"],
   };
 };

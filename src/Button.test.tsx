@@ -1,6 +1,6 @@
 import { render, fireEvent } from "@testing-library/react";
 import { describe, it, expect, vi } from "vitest";
-import Button from "../code/Button";
+import Button from "./Button";
 
 describe("Button component", () => {
   it("should render with the correct label", () => {
